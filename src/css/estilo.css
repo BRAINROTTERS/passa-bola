@@ -12,24 +12,30 @@ body{
 header{
     background: #5390b7;
     color:#333;
-    padding: 20px;
+    padding: 3%;
     display:flex;
     justify-content:space-between;
     align-items: center;
     box-shadow: 5px 5px 5px #555;
+   position: relative;
 }
 header nav ul{
     list-style: none;
     display: flex;
-    gap:20px;
+    gap:2%;
+    margin-left: 2%;
+    position: absolute;
+    left: 50%;
+    
 }
 header nav ul li a{
     text-decoration: none;
     color:#555;
     font-weight: 700;
     font-family: "Lilita One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-size: 1rem;
+    
+
 }
 
 header nav ul li a:hover{
@@ -37,25 +43,61 @@ header nav ul li a:hover{
     text-decoration: underline;
     border: 2px solid #ccc;
 }
-header #logo{
+ .logo{
     color:rgb(92, 82, 200);
     font-family: "Anton", sans-serif;
     font-weight: 400;
-    font-style: normal;
-}
-header img{
- height: 40px;
- position: relative;right: 85%;
- transform: scale(1);
- border-radius: 50%;
- border: none;
+    position: relative;
+    position: absolute;
+    font-size: 2rem;
+   top: 30%;
+   left: 2%;
 
+    
+    
+    
+}
+.marca{
+ width: 4%;
+border-radius: 100%;
+position:absolute;right: 82%;top: 20%;
  
 }
- .navigation{
-    position: relative;left: 80%;
-    width: 265px    ;
-    background-color: aquamarine;
-    height: 400px;
+.container2{
+   position: relative;
 }
+.fundo{
+    width: 100%;
+    opacity: 70%;
+}
+
+.slogan{
+   position: absolute;
+   top: 20%;
+   left: 50%;
+   font-size: xx-large;
+   transform: translate(-50%, -50%);
+    z-index: 1;
+    
+
+}
+@media (max-width: 1040px) {
+    .logo {
+        font-size: 1.5rem; /* Diminui o tamanho da fonte para telas menores */
+    }
+    header nav ul li a  {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .logo {
+        font-size: 1rem; /* Diminui ainda mais o tamanho para telas muito pequenas */
+    }
+    header nav ul li a  {
+        font-size: 0.8rem;
+    }
+}
+
+
 
