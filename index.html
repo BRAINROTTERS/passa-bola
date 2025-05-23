@@ -4,36 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/estilo.css">
+    <link rel="shortcut icon" href="./src/assets/shortcuticonpassaabola.png" type="image/x-icon">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
         </style>
-    <title>passa bola</title>
+    <title>Passa a bola</title>
 </head>
 
 <body>
-    <header>
-       
-        <h1 class="logo">PASSA BOLA</h1> <img src="./src/assets/bola.png" class="marca">
-        <div class=navigatio>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./src/pages/sobre.html">Sobre</a></li>
-                <li><a href="./src/pages/cardapio.html">Cardápio</a></li>
-                <li><a href="./src/pages/contato.html">Contato</a></li>
-            </ul>
-        </nav>
+    <section class="hero">
+            <header>
+                <h1>Passa a Bola</h1>
+                <nav>
+                    <ul class="header-menu">
+                        <li><a href="./index.html" class="item-menu">Home</a></li>
+                        <li><a href="./pages/localizacao.html" class="item-menu">Localizações</a></li>
+                        <li><a href="./pages/sobre.html" class="item-menu">Sobre</a></li>
+                        <li><a href="./pages/contato.html" class="item-menu">Contato</a></li>
+
+                    </ul>
+                </nav>
+                <div class="hamburguer">
+                    <span class="barra"></span>
+                    <span class="barra"></span>
+                    <span class="barra"></span>
+                </div> 
+            </header>
+            
+
+            
+
+        </section>
+
+    <div class="conteudo-wrapper">
+    <div class="conteudo-com-lateral">
+        <main class="conteudo-principal">
+           <h1 id="slogan">FUTEBOL <span>PARA TODOS</span></h1>
+            <section class="container">
+                
+            </section>
+        </main>
+        
+        <aside class="barra-lateral">
+           <div class="card-video">
+            <h3>ÚLTIMO VÍDEO DO CANAL</h3>
+            <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/watch?v=2Lm5CJVdeN8" 
+                frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p class="descricao-video">Confira os melhores momentos do último jogo!</p>
+            <button class="botao-inscreva">INSCREVA-SE</button>
         </div>
-    </header>
-    <section class="container">
-        <div class="container2">
-        <img src="./src/assets/istockphoto-185122903-612x612.jpg" class="fundo">
-        <h1 class="slogan">FOTBALL PARA TODOS</h1>
-        </div>
-    </section>
-    
+        </aside>
+    </div>
        
-     
+      <footer>
+        <p>&copy; -2025- todos os direitos reservados</p>
+        </footer>
     <script src="./src/js/script.js"></script>
 </body>
 </html>
