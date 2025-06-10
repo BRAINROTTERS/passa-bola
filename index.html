@@ -1,66 +1,131 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/estilo.css">
-    <link rel="shortcut icon" href="./src/assets/shortcuticonpassaabola.png" type="image/x-icon">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-        </style>
     <title>Passa a bola</title>
+    <link rel="shortcut icon" href="./src/assets/shortcuticonpassaabola.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./src/css/estilo.css">
 </head>
-
 <body>
     <section class="hero">
             <header>
-                <h1>Passa a Bola</h1>
-                <nav>
+                <h1 id="">Home</h1>
+                <nav class="navbar">
                     <ul class="header-menu">
-                        <li><a href="./index.html" class="item-menu">Home</a></li>
-                        <li><a href="./pages/localizacao.html" class="item-menu">Localizações</a></li>
-                        <li><a href="./pages/sobre.html" class="item-menu">Sobre</a></li>
-                        <li><a href="./pages/contato.html" class="item-menu">Contato</a></li>
-
+                        <li><a id="page" href="./index.html" class="item-menu">Home</a></li>
+                        <li><a id="page" href="./src/pages/localizacao.html" class="item-menu">Localizações</a></li>
+                        <li><a id="page" href="./src/pages/sobre.html" class="item-menu">Sobre</a></li>
+                        <li><a id="page" href="./src/pages/contato.html" class="item-menu">Contato</a></li>
+                        <li><a id="page" href="./src/pages/Copa.html" class="item-menu">Copa</a></li>
                     </ul>
                 </nav>
                 <div class="hamburguer">
                     <span class="barra"></span>
                     <span class="barra"></span>
                     <span class="barra"></span>
-                </div> 
-            </header>
-            
-
-            
-
-        </section>
-
-    <div class="conteudo-wrapper">
-    <div class="conteudo-com-lateral">
-        <main class="conteudo-principal">
-           <h1 id="slogan">FUTEBOL <span>PARA TODOS</span></h1>
-            <section class="container">
+                </div>
                 
-            </section>
-        </main>
-        
-        <aside class="barra-lateral">
-           <div class="card-video">
-            <h3>ÚLTIMO VÍDEO DO CANAL</h3>
-            <div class="video-container">
-                <iframe width="100%" height="200" src="https://www.youtube.com/watch?v=2Lm5CJVdeN8" 
-                frameborder="0" allowfullscreen></iframe>
-            </div>
-            <p class="descricao-video">Confira os melhores momentos do último jogo!</p>
-            <button class="botao-inscreva">INSCREVA-SE</button>
+ 
+            </header>
+        </section>
+    <!-- Seção de Boas-Vindas -->
+    <section class="welcome-section">
+        <div class="floating-elements">
+            <div class="shape circle" style="top: 20%; left: 10%;"></div>
+            <div class="shape triangle" style="top: 70%; left: 80%;"></div>
+            <div class="shape circle" style="top: 60%; left: 15%; width: 60px; height: 60px;"></div>
         </div>
-        </aside>
-    </div>
-       
-      <footer>
-        <p>&copy; -2025- todos os direitos reservados</p>
-        </footer>
-    <script src="./src/js/script.js"></script>
+        
+        <div class="welcome-content">
+            <h1 class="welcome-title">BEM-VINDA AO NOSSO CANAL</h1>
+            <p class="welcome-subtitle">Acompanhe as últimas notícias e destaques do esporte que mais cresce no mundo</p>
+        </div>
+        
+        <div class="scroll-prompt">
+            <i class="fas fa-chevron-down"></i>
+            <span>Arraste para ver as notícias</span>
+        </div>
+    </section>
+
+    <!-- Seção de Notícias -->
+    <section class="news-section" id="news">
+        <h2 class="section-title">ÚLTIMAS NOTÍCIAS</h2>
+        
+        <div class="news-grid">
+            <!-- Notícia 1 -->
+            <div class="news-card">
+                <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Futebol Feminino" class="news-image">
+                <div class="news-content">
+                    <div class="news-date">15 JUN 2023</div>
+                    <h3 class="news-title">Seleção Brasileira vence torneio internacional</h3>
+                    <p class="news-excerpt">A equipe brasileira conquistou o título do torneio amistoso após vitória sobre a Alemanha por 2 a 1.</p>
+                    <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Notícia 2 -->
+            <div class="news-card">
+                <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Futebol Feminino" class="news-image">
+                <div class="news-content">
+                    <div class="news-date">12 JUN 2023</div>
+                    <h3 class="news-title">Nova liga profissional anuncia calendário 2023/24</h3>
+                    <p class="news-excerpt">A liga nacional de futebol feminino divulgou o calendário completo da próxima temporada.</p>
+                    <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Notícia 3 -->
+            <div class="news-card">
+                <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Futebol Feminino" class="news-image">
+                <div class="news-content">
+                    <div class="news-date">10 JUN 2023</div>
+                    <h3 class="news-title">Jogadora brasileira é eleita melhor do mundo</h3>
+                    <p class="news-excerpt">Pela terceira vez consecutiva, a atacante recebeu o prêmio de melhor jogadora do ano.</p>
+                    <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Notícia 4 -->
+            <div class="news-card">
+                <img src="https://images.unsplash.com/photo-1552667466-07770ae110d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Futebol Feminino" class="news-image">
+                <div class="news-content">
+                    <div class="news-date">08 JUN 2023</div>
+                    <h3 class="news-title">Clube anuncia estádio dedicado ao futebol feminino</h3>
+                    <p class="news-excerpt">O novo estádio com capacidade para 15.000 pessoas será inaugurado no próximo mês.</p>
+                    <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Notícia 5 -->
+            <div class="news-card">
+                <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Futebol Feminino" class="news-image">
+                <div class="news-content">
+                    <div class="news-date">05 JUN 2023</div>
+                    <h3 class="news-title">Recorde de público em jogo do campeonato nacional</h3>
+                    <p class="news-excerpt">Mais de 35.000 torcedores prestigiaram o clássico no último final de semana.</p>
+                    <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Notícia 6 -->
+            <div class="news-card">
+                <img src="https://images.unsplash.com/photo-1444491741275-3747c53c99b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Futebol Feminino" class="news-image">
+                <div class="news-content">
+                    <div class="news-date">01 JUN 2023</div>
+                    <h3 class="news-title">Projeto social forma nova turma de jovens atletas</h3>
+                    <p class="news-excerpt">Iniciativa já revelou diversas jogadoras que hoje atuam em times profissionais.</p>
+                    <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+<script src="./src/js/script.js"></script>
+
+   
 </body>
 </html>
