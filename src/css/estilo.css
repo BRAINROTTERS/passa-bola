@@ -34,7 +34,7 @@ nav ul{
 a{
     text-decoration: none;
     color:var(--color-font1);
-    font-size: var(--font-size);
+    
     transition:  color .3s;
     
    
@@ -46,12 +46,12 @@ a:hover{
 header{
     display: flex;
     justify-content: space-between;
-    font-size: var(--font-size);
+    font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
  
 }
 header h1{
-    font-size: var(--font-size);
+    font-size: 2rem;
     position: relative;
     font-family: 'Montserrat', sans-serif;
     color: var(--color-font1);
@@ -98,7 +98,7 @@ body {
 
         .welcome-title {
             font-family: 'Montserrat', sans-serif;
-            font-size: 5rem;
+            font-size: 7rem;
             margin-bottom: 1rem;
             background: linear-gradient(to right, var(--color-font1), var(--color-font3));
             -webkit-background-clip: text;
@@ -313,6 +313,7 @@ body {
         justify-content: center;
         transition: .5s;
     }
+    
     #titulo{
         font-size: 2rem;
     }
@@ -332,17 +333,20 @@ body {
     .hamburguer.active .barra:last-child{
         transform: translateY(-8px) rotate(-360deg) rotate(-45deg);
     }
+    
 }
 
 
 /* Contato */
 .contact-container {
             max-width: 1200px;
-            width: 100%;
+            width: 70%;
             display: flex;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             border-radius: 20px;
             overflow: hidden;
+            position: relative;
+            
         }
         
         .contact-info {
@@ -494,4 +498,14 @@ body {
         }
 
 
-
+        #mapid{
+            width: 600px;
+            height: 500px;
+            border-radius: 30px;
+            left: 300px;
+          }
+          #localizacao{
+            margin-top: 10px;
+            font-weight: 600;
+        
+          }

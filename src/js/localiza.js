@@ -24,17 +24,12 @@ document.querySelectorAll('nav a').forEach(link => {
     });
 });
 
-// Substitua pelo ID do seu último vídeo do YouTube
-function carregarUltimoVideo() {
-    const videoId = '2Lm5CJVdeN8'; // Ex: 'dQw4w9WgXcQ'
-    const iframe = document.querySelector('.video-container iframe');
-    iframe.src = `https://www.youtube.com/embed/${videoId}`;
-}
-
-// Chame a função quando a página carregar
-window.addEventListener('load', carregarUltimoVideo);
 
 let map = L.map('mapid').setView([-23.5505, -46.6333], 10);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+}).addTo(map);
 
 //CONTRUINDO A APLICAÇÃO DO MAP DA API
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -54,5 +49,3 @@ function mapa(e) {
     L.marker(e.latlng).addTo(map)
         .bindPopup(`Latitude: ${lat}<br>Longitude: ${long}`).openPopup();
 }
-
-map.on('click', mapa);
