@@ -558,3 +558,174 @@ figure:before {
     filter: brightness(1.2) contrast(3.0);
     width: 60%;
 }
+
+* === ESTILO EXCLUSIVO PARA A ABA DA COPA === */
+
+.pagina-copa body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #f1f1f1;
+    color: #222;
+}
+
+.pagina-copa header {
+    background-color: #007b3e;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pagina-copa header h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.pagina-copa .header-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.pagina-copa .header-menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.pagina-copa .header-menu li a:hover {
+    color: #f9d342;
+}
+
+/* Slogan */
+.pagina-copa #slogancopa {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    color: #007b3e;
+    margin-top: 40px;
+}
+
+.pagina-copa #slogancopa span {
+    color: #f9d342;
+}
+
+/* Formulário */
+.pagina-copa .quiz {
+    background: white;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pagina-copa .quiz h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007b3e;
+}
+
+.pagina-copa #container-perguntas h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.pagina-copa #resposta {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+}
+
+.pagina-copa #resposta:focus {
+    border-color: #007b3e;
+    outline: none;
+}
+
+.pagina-copa #proximo,
+.pagina-copa #inicio-btn {
+    background-color: #007b3e;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagina-copa #proximo:hover,
+.pagina-copa #inicio-btn:hover {
+    background-color: #005f30;
+}
+
+.pagina-copa #message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.pagina-copa .hidden {
+    display: none;
+}
+
+/* Resultado */
+.pagina-copa #container-resultado ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pagina-copa #container-resultado li {
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-left: 4px solid #007b3e;
+    border-radius: 6px;
+}
+
+.pagina-copa #container-resultado span {
+    color: #007b3e;
+    font-weight: bold;
+}
+
+/* Footer */
+.pagina-copa footer {
+    background-color: #007b3e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 60px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .pagina-copa header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pagina-copa .header-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .pagina-copa #slogancopa {
+        font-size: 2rem;
+    }
+
+    .pagina-copa .quiz {
+        padding: 20px;
+    }
+}
