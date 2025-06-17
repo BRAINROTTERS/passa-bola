@@ -729,3 +729,54 @@ figure:before {
         padding: 20px;
     }
 }
+.sobre-fundo{
+ background-image: var(--gradient),url(../assets/fundosobre.pg.jpg);
+ width: 60%;
+  font-family: 'Montserrat', sans-serif;
+   
+   
+    color: white;
+    overflow-x: hidden;
+}
+.titulo-sobre{
+ position: absolute;left: 40%;top: 20%;
+ font-size: 400%;
+ color: #9857ff;
+  font-family: 'Montserrat', sans-serif;
+            font-size: 7rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, var(--color-font1), var(--color-font3));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            animation: fadeIn 1.5s ease;
+ 
+}
+.texto-sobre{
+    font-size: 300%;
+    position: absolute;top: 40%;left: 5%;
+    color: #fefdff;
+}
+.header-sobre{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+     display: flex;
+    gap: 20px;
+    position: absolute;left: 70%;
+}
+.logo5{
+    mix-blend-mode: multiply;
+    filter: brightness(1.2) contrast(3.0);
+    width: 60%;
+   
+   
+}
+.sobre{
+     display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
